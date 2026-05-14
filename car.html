@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Service Center</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      color:#ff3c00;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ff3c00;
+    }
+
+    .hero{
+      height:90vh;
+      background:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+    }
+
+    .hero-content{
+      background:rgba(0,0,0,0.6);
+      padding:40px;
+      border-radius:10px;
+    }
+
+    .hero h2{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      background:#ff3c00;
+      color:white;
+      padding:12px 25px;
+      border:none;
+      text-decoration:none;
+      border-radius:5px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#d63000;
+    }
+
+    .services{
+      padding:60px 50px;
+      text-align:center;
+    }
+
+    .services h2{
+      margin-bottom:40px;
+      font-size:36px;
+    }
+
+    .service-boxes{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .box{
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 5px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .box:hover{
+      transform:translateY(-5px);
+    }
+
+    .box h3{
+      margin-bottom:15px;
+      color:#ff3c00;
+    }
+
+    .about{
+      background:#222;
+      color:white;
+      padding:60px 50px;
+      text-align:center;
+    }
+
+    .about h2{
+      margin-bottom:20px;
+      font-size:36px;
+    }
+
+    .contact{
+      padding:60px 50px;
+      text-align:center;
+    }
+
+    .contact form{
+      max-width:500px;
+      margin:auto;
+    }
+
+    .contact input,
+    .contact textarea{
+      width:100%;
+      padding:12px;
+      margin:10px 0;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+
+    .contact button{
+      background:#ff3c00;
+      color:white;
+      border:none;
+      padding:12px 25px;
+      border-radius:5px;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>AutoFix</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Professional Car Services</h2>
+      <p>Your trusted partner for car repair & maintenance</p>
+      <a href="#contact" class="btn">Book Service</a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-boxes">
+
+      <div class="box">
+        <h3>Oil Change</h3>
+        <p>Complete engine oil replacement and maintenance service.</p>
+      </div>
+
+      <div class="box">
+        <h3>Brake Repair</h3>
+        <p>Professional brake inspection and repair for your safety.</p>
+      </div>
+
+      <div class="box">
+        <h3>Car Washing</h3>
+        <p>Premium interior and exterior car cleaning services.</p>
+      </div>
+
+      <div class="box">
+        <h3>Engine Check</h3>
+        <p>Advanced diagnostics and engine performance checks.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      We provide high-quality car repair and maintenance services
+      with experienced mechanics and modern equipment.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 AutoFix Car Service Center. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
